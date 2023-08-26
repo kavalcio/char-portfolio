@@ -1,24 +1,26 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
-import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-import type PostType from '../../interfaces/post'
 
+import Container from '../../components/container'
+import Layout from '../../components/layout'
+import PostTitle from '../../components/post-title'
+import { CMS_NAME } from '../../lib/constants'
+import type PostType from '../../interfaces/post'
+import Intro from '../../components/intro'
+import Image from '../../components/post/image'
+import Text from '../../components/post/text'
+
+import { POST_DICTIONARY } from '../../data/posts';
+
+// TODO: update PostType to fit our post format
 type Props = {
   post: PostType
-  morePosts: PostType[]
   preview?: boolean
 }
 
-export default function Post({ post, morePosts, preview }: Props) {
+// TODO: rename Intro component to Header
+export default function Post({ post, preview }: Props) {
+  console.log('post', post)
   const router = useRouter()
   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
   if (!router.isFallback && !post?.slug) {
@@ -27,12 +29,23 @@ export default function Post({ post, morePosts, preview }: Props) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        <Intro />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <PostTitle>{post.title}</PostTitle>
+            {post.contents.map((content, index) => (
+              <>
+                {content.type === 'image' && (
+                  <Image source={content.source} />
+                )}
+                {content.type === 'text' && (
+                  <Text text={content.text} />
+                )}
+              </>
+            ))}
+            {/* <article className="mb-32">
               <Head>
                 <title>{title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
@@ -44,7 +57,7 @@ export default function Post({ post, morePosts, preview }: Props) {
                 author={post.author}
               />
               <PostBody content={post.content} />
-            </article>
+            </article> */}
           </>
         )}
       </Container>
@@ -59,38 +72,18 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
-  ])
-  const content = await markdownToHtml(post.content || '')
-
+  const post = POST_DICTIONARY[params.slug];
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post,
     },
   }
-}
+};
 
+// TODO: if use tries to go to an invalid slug, redirect to 404 instead of showing js error
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
-
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
-    fallback: false,
-  }
-}
+    paths: [], //indicates that no page needs be created at build time
+    fallback: 'blocking', //indicates the type of fallback
+  };
+};

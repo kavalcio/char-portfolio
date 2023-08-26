@@ -7,6 +7,8 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
+import Posts from '../components/posts'
+import { getOrderedPosts } from '../data/posts.js';
 
 type Props = {
   allPosts: Post[]
@@ -14,6 +16,7 @@ type Props = {
 
 export default function Film({ allPosts }: Props) {
   const morePosts = allPosts
+  const posts = getOrderedPosts();
   return (
     <>
       <Layout>
@@ -22,7 +25,7 @@ export default function Film({ allPosts }: Props) {
         </Head>
         <Container>
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <Posts posts={posts} />
         </Container>
       </Layout>
     </>
