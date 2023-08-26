@@ -21,16 +21,15 @@ type Props = {
 
 // TODO: rename Intro component to Header
 export default function Post({ post, preview }: Props) {
-  console.log('post', post)
-  const router = useRouter()
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`
+  const router = useRouter();
+  const title = post.title ? `${post.title} | Charlotte Claytor` : 'Charlotte Claytor';
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
     <Layout preview={preview}>
       <Head>
-        <title>Charlotte Claytor</title>
+        <title>{title}</title>
       </Head>
       <Container>
         <Intro />

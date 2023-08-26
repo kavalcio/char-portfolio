@@ -1,17 +1,10 @@
-import type Author from './author'
+import PostContentType from './postContent'
 
 type PostType = {
   slug: string
   title: string
-  // date: string
   coverImage: string
-  contents: Array<object>
-  // author: Author
-  // excerpt: string
-  // ogImage: {
-  //   url: string
-  // }
-  // content: string
+  contents: Array<PostContentType>
 }
 
 export default PostType
