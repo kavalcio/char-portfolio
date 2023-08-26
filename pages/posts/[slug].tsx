@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
+import Head from 'next/head'
 
 import Container from '../../components/container'
 import Layout from '../../components/layout'
@@ -28,6 +29,9 @@ export default function Post({ post, preview }: Props) {
   }
   return (
     <Layout preview={preview}>
+      <Head>
+        <title>Charlotte Claytor</title>
+      </Head>
       <Container>
         <Intro />
         {router.isFallback ? (
