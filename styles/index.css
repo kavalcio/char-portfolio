@@ -40,6 +40,14 @@
   box-shadow: none;
 }
 
+html {
+  /* font-family: Archivo Black, sans-serif; */
+}
+
 .post-preview-title {
   position: absolute;
+  /* font-family: var(--font-archivo-black); */
+  /* font-family: Archivo, sans-serif; */
+  font-size: 24px;
+  font-weight: 700;
 }

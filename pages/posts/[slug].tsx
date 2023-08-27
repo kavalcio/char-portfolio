@@ -5,9 +5,8 @@ import Head from 'next/head'
 import Container from '../../components/container'
 import Layout from '../../components/layout'
 import PostTitle from '../../components/post-title'
-import { CMS_NAME } from '../../lib/constants'
 import type PostType from '../../interfaces/post'
-import Intro from '../../components/intro'
+import PageHeader from '../../components/page-header'
 import Image from '../../components/post/image'
 import Text from '../../components/post/text'
 
@@ -32,7 +31,7 @@ export default function Post({ post, preview }: Props) {
         <title>{title}</title>
       </Head>
       <Container>
-        <Intro />
+        <PageHeader />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
