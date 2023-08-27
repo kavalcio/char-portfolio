@@ -24,3 +24,22 @@
   /* text-decoration: underline; */
   border-bottom: 2px solid black;
 }
+
+.post-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.20s, box-shadow 0.20s;
+  height: 500px;
+  background-size: cover;
+  box-shadow: 0 0 200px 10px rgba(92, 61, 21, 0.2) inset;
+}
+
+.post-preview:hover {
+  color: transparent;
+  box-shadow: none;
+}
+
+.post-preview-title {
+  position: absolute;
+}

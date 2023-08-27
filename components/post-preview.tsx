@@ -1,8 +1,4 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
 import Link from 'next/link'
-import type Author from '../interfaces/author'
 
 type Props = {
   title: string
@@ -16,19 +12,19 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
-        <h3 className="text-3xl mb-3 leading-snug">
-          <Link
-            as={`/posts/${slug}`}
-            href="/posts/[slug]"
-            className="hover:underline"
-          >
-            {title}
-          </Link>
-        </h3>
-      </div>
+    <Link
+      className='post-preview'
+      as={`/posts/${slug}`}
+      href="/posts/[slug]"
+      style={{
+        backgroundImage: `url(${coverImage})`,
+        // backgroundPosition: '25% 75%',
+      }}
+    >
+      <span className="post-preview-title">{title}</span>
+      {/* <h3 className="text-3xl mb-3 leading-snug">
+        {title}
+      </h3> */}
       {/* <h3 className="text-3xl mb-3 leading-snug">
         <Link
           as={`/posts/${slug}`}
@@ -43,7 +39,7 @@ const PostPreview = ({
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} /> */}
-    </div>
+    </Link>
   )
 }
 

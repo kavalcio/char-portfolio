@@ -31,7 +31,6 @@ export default function Resume({ allPosts }: Props) {
               excerpt={heroPost.excerpt}
             />
           )} */}
-          {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </Container>
       </Layout>
     </>
