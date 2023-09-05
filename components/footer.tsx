@@ -1,14 +1,14 @@
 import Container from './container'
 import Navbar from './navbar'
 
-// todo: maybe add some contact info to the footer? maybe just make the footer the same tab navigator as above
+// todo: add contact info to footer
 // todo: add button in bottom right corner to scroll to top
 const Footer = () => {
   return (
     <footer className="bg-neutral-50 border-t border-neutral-200">
       <Container>
         <div className="py-12 flex flex-col lg:flex-row items-center">
-          <Navbar />
+          {/* <Navbar /> */}
           {/* <h3 className="text-4xl lg:text-[2.5rem] font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
             Statically Generated with Next.js.
           </h3> */}

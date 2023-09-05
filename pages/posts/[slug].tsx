@@ -12,21 +12,18 @@ import Text from '../../components/post/text'
 
 import { POST_DICTIONARY } from '../../data/posts';
 
-// TODO: update PostType to fit our post format
 type Props = {
   post: PostType
-  preview?: boolean
 }
 
-// TODO: rename Intro component to Header
-export default function Post({ post, preview }: Props) {
+export default function Post({ post }: Props) {
   const router = useRouter();
   const title = post.title ? `${post.title} | Charlotte Claytor` : 'Charlotte Claytor';
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <Layout preview={preview}>
+    <Layout>
       <Head>
         <title>{title}</title>
       </Head>

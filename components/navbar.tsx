@@ -28,9 +28,17 @@ const tabs = [
 const Navbar = () => {
   const { pathname } = useRouter();
   return (
-    <section style={{
-      display: 'flex',
-    }}>
+    // todo: fix on mobile screens
+    <section
+      className='pt-8 pb-8 md:pt-0 md:pb-0'
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        overflow: 'hidden',
+        // overflowX: 'scroll',
+        // marginTop: 32,
+      }}
+    >
       {tabs.map((tab, index) => (
         <Link
           key={index}
@@ -43,7 +51,7 @@ const Navbar = () => {
         </Link>
       ))}
     </section>
-  )
+  );
 }
 
 export default Navbar;

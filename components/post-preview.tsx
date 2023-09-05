@@ -22,6 +22,7 @@ const PostPreview = ({
       }}
     >
       <span className="post-preview-title">{title}</span>
+      {/* <span className="post-preview-subtitle">{subtitle}</span> */}
       {/* <h3 className="text-3xl mb-3 leading-snug">
         {title}
       </h3> */}

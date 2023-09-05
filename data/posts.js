@@ -1,72 +1,122 @@
 // TODO: fill this in with real data
 export const ORDERED_POST_IDS = [
-  'hello-world',
-  'wuthering-heights',
-  'wuthering-heights-2',
+  'the-last-lightkeeper',
+  'one-to-five',
+  // 'wuthering-heights-2',
 ];
 
+// todo: add year for films
 export const POST_DICTIONARY = {
-  'hello-world': {
-    slug: 'hello-world',
-    title: 'The Great Gatsby',
-    coverImage: '/assets/blog/hello-world/cover.jpg',
+  'the-last-lightkeeper': {
+    slug: 'the-last-lightkeeper',
+    title: 'The Last Lightkeeper',
+    subtitle: '2023',
+    coverImage: '/assets/images/lightkeeper/lightkeeper-3.jpeg',
     contents: [
       {
         type: 'text',
-        text: 'Hello world, my name is Charlotte. Bingo bango \n oh no, I am a robot.'
+        text: `**Director:** Sofia Simanovich  
+          **Writer:** Sofia Simanovich  
+          **Costume Designer:** Charlotte Claytor  
+          **Production Company:** Karma Butterfly Productions
+        `,
       },
       {
         type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
+        source: '/assets/images/lightkeeper/lightkeeper-4.jpeg',
       },
       {
         type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
+        source: '/assets/images/lightkeeper/lightkeeper-2.jpeg',
       },
       {
         type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
+        source: '/assets/images/lightkeeper/lightkeeper-1.jpeg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/lightkeeper/lightkeeper-5.jpeg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/lightkeeper/lightkeeper-6.jpeg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/lightkeeper/lightkeeper-7.jpeg',
       },
     ],
   },
-  'wuthering-heights': {
-    slug: 'wuthering-heights',
-    title: 'Wuthering Heights',
-    coverImage: '/assets/blog/hello-world/cover.jpg',
+  'one-to-five': {
+    slug: 'one-to-five',
+    title: 'One to Five',
+    coverImage: '/assets/images/onetofive/onetofive-6.png',
     contents: [
-      {
-        type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
-      },
       {
         type: 'text',
-        text: 'Aaaaa yes'
+        text: `**Director:** Kelsea Mackay  
+          **Costumer Designers:** Charlotte Claytor & Shira Yavor  
+          **Writer:** Jennifer Sidoriak  
+          **Production Company:** Kai Productions
+        `,
+      },
+      // {
+      //   type: 'text',
+      //   text: 'Costumer Designers: Charlotte Claytor & Shira Yavor',
+      // },
+      // {
+      //   type: 'text',
+      //   text: 'Writer: Jennifer Sidoriak',
+      // },
+      // {
+      //   type: 'text',
+      //   text: 'Production Company: Kai Productions',
+      // },
+      {
+        type: 'image',
+        source: '/assets/images/onetofive/onetofive-6.png',
       },
       {
         type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
+        source: '/assets/images/onetofive/onetofive-5.png',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/onetofive/onetofive-4.png',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/onetofive/onetofive-3.png',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/onetofive/onetofive-2.png',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/onetofive/onetofive-1.png',
       },
     ],
   },
-  'wuthering-heights-2': {
-    slug: 'wuthering-heights-2',
-    title: 'Wuthering Heights 2',
-    coverImage: '/assets/blog/hello-world/cover.jpg',
-    contents: [
-      {
-        type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/blog/hello-world/cover.jpg',
-      },
-    ],
-  },
+  // 'wuthering-heights-2': {
+  //   slug: 'wuthering-heights-2',
+  //   title: 'Wuthering Heights 2',
+  //   coverImage: '/assets/blog/hello-world/cover.jpg',
+  //   contents: [
+  //     {
+  //       type: 'image',
+  //       source: '/assets/blog/hello-world/cover.jpg',
+  //     },
+  //     {
+  //       type: 'image',
+  //       source: '/assets/blog/hello-world/cover.jpg',
+  //     },
+  //     {
+  //       type: 'image',
+  //       source: '/assets/blog/hello-world/cover.jpg',
+  //     },
+  //   ],
+  // },
 };
 
 export const getOrderedPosts = () => {

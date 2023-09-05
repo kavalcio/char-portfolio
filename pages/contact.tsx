@@ -22,6 +22,8 @@ export default function Contact() {
               excerpt={heroPost.excerpt}
             />
           )} */}
+          <span>charlotteclaytor@gmail.com</span>
+          <span>@clayychar</span>
         </Container>
       </Layout>
     </>

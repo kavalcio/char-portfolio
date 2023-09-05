@@ -31,6 +31,7 @@ const Meta = () => {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap" rel="stylesheet" />
+      {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
