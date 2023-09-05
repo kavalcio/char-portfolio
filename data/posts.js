@@ -2,7 +2,7 @@
 export const ORDERED_POST_IDS = [
   'the-last-lightkeeper',
   'one-to-five',
-  // 'wuthering-heights-2',
+  'anne-with-an-e',
 ];
 
 // todo: add year for films
@@ -10,7 +10,7 @@ export const POST_DICTIONARY = {
   'the-last-lightkeeper': {
     slug: 'the-last-lightkeeper',
     title: 'The Last Lightkeeper',
-    subtitle: '2023',
+    // subtitle: '2023',
     coverImage: '/assets/images/lightkeeper/lightkeeper-3.jpeg',
     contents: [
       {
@@ -50,6 +50,7 @@ export const POST_DICTIONARY = {
   'one-to-five': {
     slug: 'one-to-five',
     title: 'One to Five',
+    // 2023
     coverImage: '/assets/images/onetofive/onetofive-6.png',
     contents: [
       {
@@ -60,18 +61,6 @@ export const POST_DICTIONARY = {
           **Production Company:** Kai Productions
         `,
       },
-      // {
-      //   type: 'text',
-      //   text: 'Costumer Designers: Charlotte Claytor & Shira Yavor',
-      // },
-      // {
-      //   type: 'text',
-      //   text: 'Writer: Jennifer Sidoriak',
-      // },
-      // {
-      //   type: 'text',
-      //   text: 'Production Company: Kai Productions',
-      // },
       {
         type: 'image',
         source: '/assets/images/onetofive/onetofive-6.png',
@@ -98,25 +87,54 @@ export const POST_DICTIONARY = {
       },
     ],
   },
-  // 'wuthering-heights-2': {
-  //   slug: 'wuthering-heights-2',
-  //   title: 'Wuthering Heights 2',
-  //   coverImage: '/assets/blog/hello-world/cover.jpg',
-  //   contents: [
-  //     {
-  //       type: 'image',
-  //       source: '/assets/blog/hello-world/cover.jpg',
-  //     },
-  //     {
-  //       type: 'image',
-  //       source: '/assets/blog/hello-world/cover.jpg',
-  //     },
-  //     {
-  //       type: 'image',
-  //       source: '/assets/blog/hello-world/cover.jpg',
-  //     },
-  //   ],
-  // },
+  'anne-with-an-e': {
+    slug: 'anne-with-an-e',
+    title: 'Anne With An E - Season 3',
+    // 2020
+    coverImage: '/assets/images/anne/anne-7.jpg',
+    contents: [
+      {
+        type: 'text',
+        text: `**Creator:** Moira Walley-Beckett  
+          **Costumer Designer:** Alex Reda  
+          **Costume Apprentice:** Charlotte Claytor  
+          **Production Company:** Northwood Entertainment, CBC, Netflix
+        `,
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-7.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-6.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-8.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-1.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-3.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-4.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-5.jpg',
+      },
+    ],
+  },
 };
 
 export const getOrderedPosts = () => {

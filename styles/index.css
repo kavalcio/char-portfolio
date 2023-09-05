@@ -33,6 +33,7 @@
   transition: color 0.20s, box-shadow 0.20s;
   height: 500px;
   background-size: cover;
+  background-position: center;
   box-shadow: 0 0 200px 10px rgba(92, 61, 21, 0.2) inset;
 }
 
@@ -51,4 +52,14 @@ html {
   /* font-family: Archivo, sans-serif; */
   font-size: 24px;
   font-weight: 700;
+}
+
+.post-content-image-container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.post-content-image {
+  max-height: 600px;
 }

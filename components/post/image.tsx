@@ -4,8 +4,8 @@ type Props = {
 
 const Image = ({ source }: Props) => {
   return (
-    <div style={{ margin: 20 }}>
-      <img src={source}/>
+    <div className='post-content-image-container'>
+      <img className='post-content-image' src={source}/>
     </div>
   )
 }
