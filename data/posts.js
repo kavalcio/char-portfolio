@@ -119,19 +119,19 @@ export const POST_DICTIONARY = {
       },
       {
         type: 'image',
-        source: '/assets/images/anne/anne-2.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/anne/anne-3.jpg',
-      },
-      {
-        type: 'image',
         source: '/assets/images/anne/anne-4.jpg',
       },
       {
         type: 'image',
         source: '/assets/images/anne/anne-5.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/anne/anne-3.jpg',
       },
     ],
   },
