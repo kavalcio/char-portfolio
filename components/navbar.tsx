@@ -4,21 +4,21 @@ import Link from 'next/link'
 
 const tabs = [
   {
-    name: 'Film/TV',
+    name: 'Film & TV',
     url: '/film',
   },
-  {
-    name: 'Conceptual Designs',
-    url: '/designs',
-  },
-  {
-    name: 'Sewing',
-    url: '/sewing',
-  },
-  {
-    name: 'Resume',
-    url: '/resume',
-  },
+  // {
+  //   name: 'Conceptual Designs',
+  //   url: '/designs',
+  // },
+  // {
+  //   name: 'Sewing',
+  //   url: '/sewing',
+  // },
+  // {
+  //   name: 'Resume',
+  //   url: '/resume',
+  // },
   {
     name: 'Contact',
     url: '/contact',
@@ -34,6 +34,7 @@ const Navbar = () => {
       style={{
         display: 'flex',
         justifyContent: 'center',
+        // width: 'fit-content',
         overflow: 'hidden',
         // overflowX: 'scroll',
         // marginTop: 32,

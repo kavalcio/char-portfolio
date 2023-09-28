@@ -63,3 +63,14 @@ html {
 .post-content-image {
   max-height: 600px;
 }
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+}

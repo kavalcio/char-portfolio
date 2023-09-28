@@ -2,6 +2,7 @@ import Container from '../components/container'
 import PageHeader from '../components/page-header'
 import Layout from '../components/layout'
 import Head from 'next/head'
+import PostTitle from '../components/post-title'
 
 export default function Contact() {
   return (
@@ -12,18 +13,21 @@ export default function Contact() {
         </Head>
         <Container>
           <PageHeader />
-          {/* {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )} */}
-          <span>charlotteclaytor@gmail.com</span>
-          <span>@clayychar</span>
+          <h1 className="text-5xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center">
+            Contact
+          </h1>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <a href="mailto:charlotteclaytor@gmail.com">
+              <div className='contact-link'>
+                charlotteclaytor@gmail.com
+              </div>
+            </a>
+            <a href="https://www.instagram.com/clayychar/" target="_blank">
+              <div className='contact-link'>
+                @claycharr
+              </div>
+            </a>
+          </div>
         </Container>
       </Layout>
     </>
