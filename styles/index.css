@@ -34,12 +34,17 @@
   height: 500px;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 200px 10px rgba(92, 61, 21, 0.2) inset;
+  box-shadow: 0 0 200px 10px rgba(82, 61, 41, 0.4) inset;
 }
 
 .post-preview:hover {
   color: transparent;
   box-shadow: none;
+}
+
+.post-preview:hover > span {
+  color: transparent !important;
+  transition: color 0.20s;
 }
 
 html {
@@ -52,6 +57,7 @@ html {
   /* font-family: Archivo, sans-serif; */
   font-size: 24px;
   font-weight: 700;
+  color: white;
 }
 
 .post-content-image-container {

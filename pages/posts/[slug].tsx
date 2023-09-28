@@ -16,6 +16,7 @@ type Props = {
   post: PostType
 }
 
+// TODO make images fullscreenable. user mui modal?
 export default function Post({ post }: Props) {
   const router = useRouter();
   const title = post.title ? `${post.title} | Charlotte Claytor` : 'Charlotte Claytor';
