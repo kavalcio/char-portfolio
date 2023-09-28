@@ -75,9 +75,9 @@ const Navbar = () => {
               padding: 7,
               marginTop: 20,
             }}
+            onClick={() => setDrawerOpen(!drawerOpen)}
           >
             <MenuIcon
-              onClick={() => setDrawerOpen(!drawerOpen)}
               style={{
                 color: 'black',
                 fontSize: 40,
