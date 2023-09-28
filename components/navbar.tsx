@@ -115,6 +115,8 @@ const Navbar = () => {
                   // marginBottom: 10,
                   width: '100%',
                   textDecoration: pathname === tab.url ? 'underline' : 'none',
+                  padding: 20,
+                  fontSize: 25,
                 }}
               >
                 {tab.name}
