@@ -35,11 +35,8 @@ const Navbar = () => {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-  console.log(isMobile)
 
   return (
-    // todo: fix on mobile screens
-    // todo: dont use both tailwinds and mui breakpoints, pick one
     <>
       {!isMobile ? (
         <section

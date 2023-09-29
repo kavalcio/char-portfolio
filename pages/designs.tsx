@@ -11,7 +11,6 @@ type Props = {
 }
 
 export default function Designs({ allPosts }: Props) {
-  const morePosts = allPosts
   return (
     <>
       <Layout>
@@ -20,16 +19,6 @@ export default function Designs({ allPosts }: Props) {
         </Head>
         <Container>
           <PageHeader />
-          {/* {heroPost && 
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )} */}
         </Container>
       </Layout>
     </>
