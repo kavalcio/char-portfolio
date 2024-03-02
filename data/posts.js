@@ -56,7 +56,7 @@ export const POST_DICTIONARY = {
       {
         type: 'text',
         text: `**Director:** Kelsea Mackay  
-          **Costumer Designers:** Charlotte Claytor & Shira Yavor  
+          **Costume Designers:** Charlotte Claytor & Shira Yavor  
           **Writer:** Jennifer Sidoriak  
           **Production Company:** Kai Productions
         `,
@@ -96,8 +96,8 @@ export const POST_DICTIONARY = {
       {
         type: 'text',
         text: `**Creator:** Moira Walley-Beckett  
-          **Costumer Designer:** Alex Reda  
-          **Costume Apprentice:** Charlotte Claytor  
+          **Costume Designer:** Alex Reda  
+          **Costume Department Apprentice:** Charlotte Claytor  
           **Production Company:** Northwood Entertainment, CBC, Netflix
         `,
       },
