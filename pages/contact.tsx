@@ -4,6 +4,8 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import PostTitle from '../components/post-title'
 
+// TODO: try to embed instagram feed
+// use react-social-media-embed?
 export default function Contact() {
   return (
     <>

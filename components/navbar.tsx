@@ -11,6 +11,10 @@ const tabs = [
     name: 'Film & TV',
     url: '/film',
   },
+  {
+    name: 'Moodboards & Illustrations',
+    url: '/illustrations',
+  },
   // {
   //   name: 'Conceptual Designs',
   //   url: '/designs',
