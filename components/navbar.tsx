@@ -16,10 +16,6 @@ const tabs = [
     url: '/illustrations',
   },
   // {
-  //   name: 'Conceptual Designs',
-  //   url: '/designs',
-  // },
-  // {
   //   name: 'Sewing',
   //   url: '/sewing',
   // },
