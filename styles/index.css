@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: #666666;
-} */
+body {
+  background-color: #fff8ee;
+}
 
 .navigation-tab {
   padding: 0 10px;
@@ -12,13 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
   min-height: 50px;
 }
 
 .navigation-tab:hover {
   /* background: red; */
-  background-color: #f5f5f5;
+  background-color: #f0e9df;
 }
 
 .underlined {

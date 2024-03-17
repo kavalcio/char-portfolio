@@ -167,6 +167,154 @@ export const POST_DICTIONARY = {
       },
     ],
   },
+  'vampires': {
+    slug: 'vampires',
+    title: 'Vampires',
+    // subtitle: '2023',
+    coverImage: '/assets/images/vampires/1.jpg',
+    contents: [
+      {
+        type: 'image',
+        source: '/assets/images/vampires/1.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vampires/2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vampires/3.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vampires/4.jpg',
+      },
+    ],
+  },
+  'detective': {
+    slug: 'detective',
+    title: 'Detective',
+    coverImage: '/assets/images/detective/1.jpg',
+    contents: [
+      {
+        type: 'image',
+        source: '/assets/images/detective/1.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/detective/2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/detective/3.jpg',
+      },
+    ],
+  },
+  'vespertine': {
+    slug: 'vespertine',
+    title: 'Vespertine',
+    coverImage: '/assets/images/vespertine/moodboard.jpg',
+    contents: [
+      {
+        type: 'image',
+        source: '/assets/images/vespertine/moodboard.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vespertine/brandboard.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vespertine/trendboard.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vespertine/storyboard.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/vespertine/targetcustomerboard.jpg',
+      },
+    ],
+  },
+  'dress-design': {
+    slug: 'dress-design',
+    title: 'Dress Design',
+    coverImage: '/assets/images/dress-design/4.jpg',
+    contents: [
+      {
+        type: 'image',
+        source: '/assets/images/dress-design/2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/dress-design/3.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/dress-design/4.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/dress-design/5.jpg',
+      },
+    ],
+  },
+  'jacket-design': {
+    slug: 'jacket-design',
+    title: 'Jacket Design',
+    coverImage: '/assets/images/jacket-design/11.jpg',
+    contents: [
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/3.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/4.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/5.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/6.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/7.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/8.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/9.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/10.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/11.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/12.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/13.jpg',
+      },
+    ],
+  },
 };
 
 const ORDERED_FILM_IDS = [
@@ -179,6 +327,11 @@ export const ORDERED_FILMS = ORDERED_FILM_IDS.map((id) => POST_DICTIONARY[id]);
 
 const ORDERED_ILLUSTRATION_IDS = [
   'toxic-sue',
+  'vampires',
+  'vespertine',
+  'detective',
+  'dress-design',
+  'jacket-design',
 ];
 
 export const ORDERED_ILLUSTRATIONS = ORDERED_ILLUSTRATION_IDS.map(
