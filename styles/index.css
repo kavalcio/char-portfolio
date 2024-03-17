@@ -66,8 +66,37 @@ html {
   justify-content: center;
 }
 
+.post-content-image:hover {
+  box-shadow: 0 0 40px 0 rgba(82, 61, 41, 0.4);
+}
+
+.post-content-image-container.fullscreen > img:hover {
+  opacity: 1;
+}
+
+.post-content-image-container.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  cursor: zoom-out;
+}
+
+.post-content-image-container.fullscreen > img {
+  max-height: 100% !important;
+  cursor: inherit;
+  margin: 20px;
+}
+
 .post-content-image {
+  object-fit: contain;
   max-height: 600px;
+  transition: box-shadow 0.2s ease;
 }
 
 .fade-in-section {

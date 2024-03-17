@@ -1,10 +1,3 @@
-// TODO: fill this in with real data
-export const ORDERED_POST_IDS = [
-  'the-last-lightkeeper',
-  'one-to-five',
-  'anne-with-an-e',
-];
-
 // todo: add year for films
 export const POST_DICTIONARY = {
   'the-last-lightkeeper': {
@@ -135,8 +128,59 @@ export const POST_DICTIONARY = {
       },
     ],
   },
+  'toxic-sue': {
+    slug: 'toxic-sue',
+    title: 'Toxic Sue',
+    // subtitle: '2023',
+    coverImage: '/assets/images/toxic-sue/1.jpg',
+    contents: [
+      // {
+      //   type: 'text',
+      //   text: `**Director:** Sofia Simanovich  
+      //     **Status:** Pre-production  
+      //     **Costume Designer:** Charlotte Claytor  
+      //   `,
+      // },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/1.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/2.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/3.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/4.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/5.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/toxic-sue/6.jpg',
+      },
+    ],
+  },
 };
 
-export const getOrderedPosts = () => {
-  return ORDERED_POST_IDS.map((id) => POST_DICTIONARY[id]);
-};
+const ORDERED_FILM_IDS = [
+  'the-last-lightkeeper',
+  'one-to-five',
+  'anne-with-an-e',
+];
+
+export const ORDERED_FILMS = ORDERED_FILM_IDS.map((id) => POST_DICTIONARY[id]);
+
+const ORDERED_ILLUSTRATION_IDS = [
+  'toxic-sue',
+];
+
+export const ORDERED_ILLUSTRATIONS = ORDERED_ILLUSTRATION_IDS.map(
+  (id) => POST_DICTIONARY[id]
+);
