@@ -5,7 +5,7 @@ import Navbar from './navbar'
 // todo: add button in bottom right corner to scroll to top
 const Footer = () => {
   return (
-    <footer className="bg-neutral-50 border-t border-neutral-200">
+    <footer className="border-t border-neutral-200">
       <Container>
         <div className="py-12 flex flex-col lg:flex-row items-center">
           {/* <Navbar /> */}

@@ -4,6 +4,7 @@ type PostType = {
   slug: string
   title: string
   coverImage: string
+  postPreviewStyle?: object
   contents: Array<PostContentType>
 }
 

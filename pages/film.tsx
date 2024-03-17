@@ -5,15 +5,13 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../interfaces/post'
 import Posts from '../components/posts'
-import { getOrderedPosts } from '../data/posts.js';
+import { ORDERED_FILMS } from '../data/posts.js';
 
 type Props = {
   allPosts: Post[]
 }
 
 export default function Film({ allPosts }: Props) {
-  const morePosts = allPosts
-  const posts = getOrderedPosts();
   return (
     <>
       <Layout>
@@ -22,7 +20,7 @@ export default function Film({ allPosts }: Props) {
         </Head>
         <Container>
           <PageHeader />
-          <Posts posts={posts} />
+          <Posts posts={ORDERED_FILMS} />
         </Container>
       </Layout>
     </>

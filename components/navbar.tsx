@@ -11,6 +11,10 @@ const tabs = [
     name: 'Film & TV',
     url: '/film',
   },
+  {
+    name: 'Moodboards & Illustrations',
+    url: '/illustrations',
+  },
   // {
   //   name: 'Conceptual Designs',
   //   url: '/designs',
@@ -82,16 +86,12 @@ const Navbar = () => {
             />
           </IconButton>
           <Drawer
-            // anchor={'top'}
-            anchor={'left'}
+            anchor={'top'}
             open={drawerOpen}
             onClose={() => setDrawerOpen(false)}
-            // style={{
-            //   background: 'teal',
-            // }}
             PaperProps={{
               style: {
-                // background: '#f5f5f5',
+                background: '#fff8ee',
                 minWidth: 300,
                 minHeight: '60%',
                 display: 'flex',
