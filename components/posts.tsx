@@ -18,6 +18,7 @@ const Posts = ({ posts }: Props) => {
             title={post.title}
             coverImage={post.coverImage}
             slug={post.slug}
+            postPreviewStyle={post.postPreviewStyle}
           />
         ))}
       </div>

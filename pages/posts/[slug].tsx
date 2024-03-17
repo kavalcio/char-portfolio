@@ -16,7 +16,6 @@ type Props = {
   post: PostType
 }
 
-// TODO make images fullscreenable. user mui modal?
 export default function Post({ post }: Props) {
   const router = useRouter();
   const title = post.title ? `${post.title} | Charlotte Claytor` : 'Charlotte Claytor';
@@ -59,7 +58,7 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = POST_DICTIONARY[params.slug];
+  const post = POST_DICTIONARY[params.slug] || {};
   return {
     props: {
       post,
@@ -67,7 +66,6 @@ export async function getStaticProps({ params }: Params) {
   }
 };
 
-// TODO: if use tries to go to an invalid slug, redirect to 404 instead of showing js error
 export async function getStaticPaths() {
   return {
     paths: [], //indicates that no page needs be created at build time

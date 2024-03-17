@@ -3,13 +3,15 @@ import Link from 'next/link'
 type Props = {
   title: string
   coverImage: string
-  slug: string
+  slug: string,
+  postPreviewStyle?: object,
 }
 
 const PostPreview = ({
   title,
   coverImage,
   slug,
+  postPreviewStyle,
 }: Props) => {
   return (
     <Link
@@ -18,7 +20,7 @@ const PostPreview = ({
       href="/posts/[slug]"
       style={{
         backgroundImage: `url(${coverImage})`,
-        // backgroundPosition: '25% 75%',
+        ...(postPreviewStyle || {}),
       }}
     >
       <span className="post-preview-title">{title}</span>
