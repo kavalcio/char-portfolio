@@ -12,7 +12,7 @@ const tabs = [
     url: '/film',
   },
   {
-    name: 'Moodboards & Illustrations',
+    name: 'Illustrations & Sewing',
     url: '/illustrations',
   },
   // {

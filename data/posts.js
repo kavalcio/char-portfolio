@@ -278,8 +278,24 @@ export const POST_DICTIONARY = {
   'jacket-design': {
     slug: 'jacket-design',
     title: 'Mystical Marshlands Jacket Design',
-    coverImage: '/assets/images/jacket-design/2.jpg',
+    coverImage: '/assets/images/jacket-design/10.jpg',
     contents: [
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/11.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/9.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/10.jpg',
+      },
+      {
+        type: 'image',
+        source: '/assets/images/jacket-design/8.jpg',
+      },
       {
         type: 'image',
         source: '/assets/images/jacket-design/2.jpg',
@@ -321,9 +337,9 @@ const ORDERED_ILLUSTRATION_IDS = [
   'toxic-sue',
   'vampires',
   'vespertine',
-  'after-all-the-years',
-  'dress-design',
   'jacket-design',
+  'dress-design',
+  'after-all-the-years',
 ];
 
 export const ORDERED_ILLUSTRATIONS = ORDERED_ILLUSTRATION_IDS.map(
