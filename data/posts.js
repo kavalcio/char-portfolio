@@ -278,7 +278,7 @@ export const POST_DICTIONARY = {
   'jacket-design': {
     slug: 'jacket-design',
     title: 'Mystical Marshlands Jacket Design',
-    coverImage: '/assets/images/jacket-design/11.jpg',
+    coverImage: '/assets/images/jacket-design/2.jpg',
     contents: [
       {
         type: 'image',
@@ -303,30 +303,6 @@ export const POST_DICTIONARY = {
       {
         type: 'image',
         source: '/assets/images/jacket-design/7.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/8.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/9.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/10.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/11.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/12.jpg',
-      },
-      {
-        type: 'image',
-        source: '/assets/images/jacket-design/13.jpg',
       },
     ],
   },
