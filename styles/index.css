@@ -53,9 +53,9 @@ html {
 }
 
 .post-preview-title {
-  position: absolute;
   /* font-family: var(--font-archivo-black); */
   /* font-family: Archivo, sans-serif; */
+  text-align: center;
   font-size: 24px;
   font-weight: 700;
   color: white;

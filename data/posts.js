@@ -1,5 +1,23 @@
 // todo: add year for films
 export const POST_DICTIONARY = {
+  'osmows-hooked-on-the-sauce': {
+    slug: 'osmows-hooked-on-the-sauce',
+    title: 'Osmow\'s: Hooked on the Sauce (Commercial)',
+    coverImage: '/assets/images/osmows/osmows-1.png',
+    contents: [
+      {
+        type: 'text',
+        text: `**Director:** Adeel Shamsi  
+          **Costume Designer:** Charlotte Claytor  
+        `,
+      },
+      {
+        type: 'video',
+        source: 'https://www.youtube.com/embed/3nRvvRD_c2Q?si=RmsxOHhPY0A7-zQ2',
+      },
+      
+    ],
+  },
   'the-last-lightkeeper': {
     slug: 'the-last-lightkeeper',
     title: 'The Last Lightkeeper',
@@ -328,6 +346,7 @@ const ORDERED_FILM_IDS = [
   'the-last-lightkeeper',
   'one-to-five',
   'anne-with-an-e',
+  'osmows-hooked-on-the-sauce',
   'after-all-the-years',
 ];
 

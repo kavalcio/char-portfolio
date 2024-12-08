@@ -9,6 +9,7 @@ import type PostType from '../../interfaces/post'
 import PageHeader from '../../components/page-header'
 import Image from '../../components/post/image'
 import Text from '../../components/post/text'
+import Video from '../../components/post/video'
 
 import { POST_DICTIONARY } from '../../data/posts';
 
@@ -41,6 +42,9 @@ export default function Post({ post }: Props) {
                 )}
                 {content.type === 'text' && (
                   <Text text={content.text} />
+                )}
+                {content.type === 'video' && (
+                  <Video source={content.source} />
                 )}
               </>
             ))}
