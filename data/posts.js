@@ -358,7 +358,6 @@ const ORDERED_ILLUSTRATION_IDS = [
   'vespertine',
   'jacket-design',
   'dress-design',
-  'after-all-the-years',
 ];
 
 export const ORDERED_ILLUSTRATIONS = ORDERED_ILLUSTRATION_IDS.map(
